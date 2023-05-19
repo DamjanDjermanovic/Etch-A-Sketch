@@ -1,12 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    background-color: #FCFCFC;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #080705;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.gridContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#grid {
+    height: 640px;
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    align-items: stretch;
+    box-shadow: 4px 4px 10px #080705;
+}
+
 .row {
     display: flex;
+    align-items: stretch;
+    flex: 1 1;
 }
 
 .square {
-    border: 1px solid black;
-    padding: 16px;
+    display: flex;
+    flex: 1 1 auto;
 }
 
 .colored {
-    background-color: black;
+    background-color: #080705;
+}
+
+button {
+    height: 48px;
+    width: 200px;
+    margin: 36px 36px 36px 0;
+    font-size: 24px;
+    font-weight: 500;
+    border: 2px solid #080705;
+    color: #080705;
+    background-color: #FCFCFC;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #080705;
+    color: #FCFCFC;
+    box-shadow: 4px 4px 10px #080705;
+    scale: 1.05;
 }

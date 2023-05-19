@@ -23,8 +23,8 @@ makeGrid(size);
 
 gridResize.addEventListener('click', () => {
     do {
-        size = Number(prompt('Enter the size of the Grid: ', 16));
-    } while (size > 100 || size < 0)
+        size = Number(prompt('Enter the size of the Grid(from 1 to 64): ', 16));
+    } while (size > 64 || size <= 0)
 
     grid.innerHTML = "";
     
