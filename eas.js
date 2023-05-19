@@ -1,5 +1,8 @@
 const grid = document.querySelector('#grid');
 const gridResize = document.querySelector('#gridResize');
+const clear = document.querySelector('#clear');
+const colorPicker = document.querySelector('#colorPicker');
+
 let size = 16;
 
 function makeGrid(size) {
@@ -23,11 +26,17 @@ makeGrid(size);
 
 gridResize.addEventListener('click', () => {
     do {
-        size = Number(prompt('Enter the size of the Grid(from 1 to 64): ', 16));
-    } while (size > 64 || size <= 0)
+        size = Number(prompt('Enter the size of the Grid(from 1 to 100): ', 16));
+    } while (size > 100 || size <= 0)
 
     grid.innerHTML = "";
     
     makeGrid(size);
 });
 
+clear.addEventListener('click', () => {
+    const squares = document.querySelectorAll('.square');
+    squares.forEach(square => {
+        square.classList.remove('colored');
+    });
+});

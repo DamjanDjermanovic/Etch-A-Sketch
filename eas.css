@@ -20,6 +20,7 @@ body {
     margin-bottom: 48px;
     font-size: 36px;
     font-weight: 700;
+    letter-spacing: 1px;
     color: #080705;
 }
 
@@ -30,10 +31,12 @@ body {
 }
 
 .buttons {
+    height: 500px;
+    margin-right: 36px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .gridContainer {
@@ -70,9 +73,9 @@ body {
 button {
     height: 48px;
     width: 200px;
-    margin: 36px 36px 36px 0;
     font-size: 24px;
     font-weight: 500;
+    letter-spacing: 1px;
     border: 2px solid #080705;
     color: #080705;
     background-color: #FCFCFC;
@@ -84,5 +87,5 @@ button:hover {
     background-color: #080705;
     color: #FCFCFC;
     box-shadow: 4px 4px 10px #080705;
-    scale: 1.05;
+    scale: 1.02;
 }
