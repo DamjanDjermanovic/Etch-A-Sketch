@@ -1,0 +1,12 @@
+.row {
+    display: flex;
+}
+
+.square {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.colored{
+    background-color: black;
+}
